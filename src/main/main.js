@@ -5,8 +5,19 @@ const { app, BrowserWindow, ipcMain,
 const { isMacOS, isWinOS, useCustomTrafficLight, isDevEnv,
     USER_AGENT, USER_AGENT_APPLE, AUDIO_EXTS, IMAGE_EXTS, APP_ICON } = require('./env')
 const path = require('path')
-let mainWin = null
-const appWidth = 1080, appHeight = 720
+
+
+let mainWin = null, tray = null
+let options = {
+    width: 1050,
+    height: 660,
+    frame: false,
+    webPreferences: {
+        nodeIntegration: true,
+        contextIsolation: false,
+        webSecurity: false,
+    },
+};
 /* 自定义函数 */
 const startup = () => {
     init()
@@ -63,13 +74,8 @@ const registryGlobalListeners = () => {
 const createWindow = () => {
     // Create the browser window.
     const mainWindow = new BrowserWindow({
-        width: appWidth,
-        height: appHeight,
-        minWidth: appWidth,
-        minHeight: appHeight,
+        ...options,
         // titleBarStyle: 'hidden',
-        trafficLightPosition: { x: 15, y: 15 },
-        transparent: true,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
             nodeIntegration: true,
