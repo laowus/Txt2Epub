@@ -1,0 +1,23 @@
+{
+  "id": "4898766",
+  "name": "txt2epub",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1453460",
+      "name": "txt",
+      "font_class": "txt",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "2454405",
+      "name": "Epub",
+      "font_class": "Epub",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    }
+  ]
+}
