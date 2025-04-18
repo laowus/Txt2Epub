@@ -1,30 +1,14 @@
-## vite + vue3 + Electron 基础模版
+## Txt2EPUB
 
-### 1. 设置 vite 端口号: vite.config.js
+### 功能简介
 
-    import { defineConfig } from 'vite'
-    import vue from '@vitejs/plugin-vue'
+将 txt 文件转换为 epub 格式文件，支持多文件转换。
 
-    // https://vitejs.dev/config/
-    export default defineConfig({
-        plugins: [vue()],
-        base: './',
-        server: { port: 2000 } //这里更改vite 启动端口
-    })
+### 如何使用
 
-### 2. 用法
-
--   下载项目
-    `git clone https://github.com/laowus/electronDemo.git`
--   初始化项目  
-    `npm install`
-
--   开发模式运行  
-    `npm run dev`
-
--   构建打包  
-    `npm run dist`
-
-    或者，分步执行  
-    `npm run build`  
-    `npm run pack`
+1. 下载并解压 txt2epub.zip 文件
+2. 运行 txt2epub.exe 文件
+3. 选择要转换的 txt 文件
+4. 选择要保存的 epub 文件
+5. 点击转换按钮
+6. 转换完成后，epub 文件将保存在指定的位置
