@@ -122,19 +122,21 @@ onMounted(() => {
     background-color: #fff;
     overflow-y: auto;
     /* 调整字体大小，根据实际情况修改 */
-    font-size: 16px !important;
+    font-size: 1rem;
 }
 
 .letter-paper {
-    /* 生成横线背景 */
-    background-image: linear-gradient(#eee 1px, transparent 1px);
+    /* 修改为黑色虚线背景 */
+    background-image: repeating-linear-gradient(0deg, #ccc, #ccc 1px, transparent 1px, transparent 1.8rem);
     /* 背景线的间距，需要和行高一致 */
-    background-size: 100% 2.2em;
+    background-size: 100% 1.8rem;
     /* 行高和背景线间距一致 */
-    line-height: 2.2em;
-    padding: 20px 40px;
+    line-height: 1.8rem;
+    padding: 0px 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
+    margin: 0px;
+    /* 确保背景随内容滚动 */
+    background-attachment: local;
 }
 
 .main p {
