@@ -16,6 +16,8 @@
         "pack": "cross-env NODE_ENV=prod electron-builder"
     },
     "dependencies": {
+        "chardet": "^2.1.0",
+        "electron-store": "^8.0.1",
         "mitt": "^3.0.0",
         "sqlite3": "^5.1.7",
         "vue": "^3.2.25",
